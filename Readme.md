@@ -1,0 +1,2 @@
+Este proyecto es una web basica desarrollada como parte de un curso Front-end.
+La pagina esta estructurada con HTML semantico y utiliza las etiquetas '<header>','<main>', y '<footer>' para organizar el contenido. El objetivo es aprender a crear la estructura basica de una pagina web y preparala para futuras mejoras con CSS y Javascrypt.
