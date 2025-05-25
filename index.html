@@ -8,44 +8,110 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Vulcane</title>
 </head>
+    <a id="inicio"></a>
 <body>
-
 <header>
+    <a id="inicio"></a>
     <img 
     width= "256"
     height="183"
     src="image/logochico.png" alt="Este es un logo">
     <!-- Acá estamos adentro del header-->
 </header>
-<nav>
-    <ul class="nav-list">
-        <li><a href="file:///C:/Users/Matia/Desktop/cursoFrontEndJS/index.html">Inicio</a></li>
-        <li><a href="https://www.ejemplo.com">Productos</a></li>
-        <li><a href="https://www.ejemplo.com">Contacto</a></li>
-    </ul>
-</nav>
-<main> 
-    <section> <iframe  
-        src="https://www.youtube.com/embed/yn-TfAzobDI" 
-        title="Raw Run || Race Against the Storm" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen>
-    </iframe>
-        
-        <video controls
-        source src="video/video.mp4"
-        type="video/mp4"
-        ></video>
+    <nav>
+        <ul id="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#">Quienes somos</a></li>
+        </ul>
+    </nav>
+<main>
+    <div id="media">
+    <section>
+        <video autoplay muted loop>
+        <source src="video/video.mp4" type="video/mp4">
+        Tu navegador no soporta el video
+
+        </video>
     </section>
+    <section class="img-media">
+    <img src="image/Banner.jpg" alt="banner">
+    </section>
+    <section class="cont-mapa">
+        <div id="mapa">
+        <p>Encontranos en</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6577.189147807007!2d-58.62082796629644!3d-34.487807840081786!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1748145567163!5m2!1ses!2sar"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+    </div>
+        </div>   
+    </section>
+                <h2>Productos</h2>
+    <a id="productos"></a>
+    <section id="prod">
+        <div class="prod">
+            <img src="image/buzo1.png" alt="">
+            <p>Hoodie</p>
+            <p>$30.000</p>
+        </div>
+        <div class="prod">
+            <img src="image/buzo1.png" alt="">
+            <p>Hoodie</p>
+            <p>$30.000</p>
+        </div>
+        <div class="prod">
+            <img src="image/buzo1.png" alt="">
+            <p>Hoodie</p>
+            <p>$30.000</p>
+        </div>
+        <div class="prod">
+            <img src="image/buzo1.png" alt="">
+            <p>Hoodie</p>
+            <p>$30.000</p>
+        </div>
+        <div class="prod">
+            <img src="image/buzo1.png" alt="">
+            <p>Hoodie</p>
+            <p>$30.000</p>
+        </div>
+        <div class="prod">
+            <img src="image/buzo1.png" alt="">
+            <p>Hoodie</p>
+            <p>$30.000</p>
+        </div>
+                </div>
+        <div class="prod">
+            <img src="image/buzo1.png" alt="">
+            <p>Hoodie</p>
+            <p>$30.000</p>
+        </div>
+        <div class="prod">
+            <img src="image/buzo1.png" alt="">
+            <p>Hoodie</p>
+            <p>$30.000</p>
+        </div>
+        <div class="prod">
+            <img src="image/buzo1.png" alt="">
+            <p>Hoodie</p>
+            <p>$30.000</p>
+        </div>
+    </section>
+
+    <a id="contacto"></a>
+    <h2> Contacto y sugerencias</h2>       
     <form
-    action="https://formspree.io/f/mjkwweoo"
-    method="POST">
+        action="https://formspree.io/f/mjkwweoo" method="POST">
         <div>
-            <label> Nombre: </label>
-            <input type="text" name="Nombre" required>
+                <label> Nombre: </label>
+                <input type="text" name="Nombre" required>
 
         </div>
         <div>
@@ -57,19 +123,29 @@
             <textarea name="message"></textarea>
         </div>
         <div>
-        <button type="submit">Enviar</button>
+            <button type="submit">Enviar</button>
         </div>
-    </form>       
+    </form>
+    
 </main>
 <footer>
-    <nav>
-    <ul class="footerNav">
-        <li><a href="https://www.ejemplo.com">Inicio</a></li>
-        <li><a href="https://www.ejemplo.com">Productos</a></li>
-        <li><a href="https://www.ejemplo.com">Contacto</a></li>
-    </ul>
-</nav>
-    <p>2025 Vulcane. Todos los derechos reservados </p>
+    <div class="cont-footer">
+        <ul id="redes">
+            <li>
+                <a href="https://www.instagram.com/vulcane.store/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+            </li>
+        </ul>
+        <nav>
+            <ul id="footerNav">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <p class="textos">2025 Vulcane. Todos los derechos reservados</p>
 </footer>
 </body>
 </html>
