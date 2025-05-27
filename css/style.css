@@ -117,6 +117,7 @@ iframe {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
     
 }
 .prod{
@@ -125,9 +126,11 @@ iframe {
     margin: 1rem;
     padding-bottom: 1rem;
     border-radius: 10px;
+    transition: transform 0.5s ease;
 }
 .prod:hover{
-    transform: scale(1.05);
+    transform: scale(1.15);
+    
 }
 .prod img{
     width: 100%;  
@@ -163,9 +166,12 @@ button[type="submit"] {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
+    transition: transform 0.5s ease;
 }
 button:hover{
-    transform: scale(1.05);
+    transform: scale(1.15);
+    background-color: rgb(212, 107, 50);
+
 }    
 footer {
     background-color: rgb(23, 36, 51);
