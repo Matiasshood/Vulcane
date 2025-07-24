@@ -13,6 +13,14 @@ html, body {
     overflow-x: hidden;
     font-family: 'Cal Sans', sans-serif;
 }
+h1{    color: rgb(200, 191, 181);
+    margin-left: 20px;
+    background-color: rgba(23, 36, 51, 0.8);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
 h2{
     color: rgb(205, 86, 22);
     margin-left: 20px;
@@ -60,7 +68,7 @@ main {
     justify-content: center;
     padding: 20px;
 }
-#media section{
+;#media section{
     flex:1 1 300px;
     max-width: 500px;
     display: flex;
@@ -225,4 +233,160 @@ footer {
     text-align: center;
     font-family: 'Manrope', sans-serif;
     color: rgb(205, 86, 22);
+}
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {    
+    background-color: rgb(23, 36, 51);
+    width: 12rem;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.producto img {
+    width: 100%;  
+    border-top-left-radius: 10px;  
+    border-top-right-radius: 10px;
+}
+.producto:hover{
+    transform: scale(1.15);
+}
+.producto p{
+    color: rgb(205, 86, 22);
+    text-align: center;
+}
+.producto h3 {
+    text-align: center;
+    color: rgb(205, 86, 22);
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+.btn-comprar {
+  display: block;
+  width: 80%;
+  margin: 10px auto 0 auto;
+  padding: 8px 0;
+  background-color: rgb(205, 86, 22);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Cal Sans', sans-serif;
+}
+
+.btn-comprar:hover {
+  background-color: rgb(212, 107, 50);
+  transform: scale(1.05);
+}   
+#carrito {
+  background-color: rgb(23, 36, 51);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  color: rgb(200, 191, 181);
+  font-family: 'Cal Sans', sans-serif;
+}
+.item-carrito {
+  background-color: rgb(33, 46, 66);
+  border: 1px solid rgba(205, 86, 22, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.item-carrito:hover {
+  transform: scale(1.02);
+}
+
+.item-carrito p {
+  color: rgb(205, 86, 22);
+  margin: 0;
+  font-size: 1rem;
+  flex: 1;
+}
+.item-carrito-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-cantidad,
+.btn-eliminar {
+  background-color: rgb(205, 86, 22);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.85rem;
+}
+
+.btn-cantidad:hover,
+.btn-eliminar:hover {
+  background-color: rgb(212, 107, 50);
+  transform: scale(1.1);
+}
+.grid-reseñas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: rgb(23, 36, 51);
+  border-radius: 10px;
+  
+}
+
+.grid-reseñas h3 {
+  grid-column: 1 / -1;
+  color: rgb(205, 86, 22);
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Cal Sans', sans-serif;
+}
+
+.reseña {
+  background-color: rgb(33, 46, 66);
+  padding: 15px;
+  border-radius: 10px;
+  color: rgb(200, 191, 181);
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reseña p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.reseña span {
+  text-align: right;
+  font-weight: bold;
+  color: rgb(205, 86, 22);
+}
+.contenedor-central {
+  display: block;
+  justify-content: center;
+  padding: 0 20px;
 }
