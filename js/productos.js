@@ -40,7 +40,7 @@ let productos = [
         id: "06",
         nombre: "Shirt Vulcane",
         Destacado: true,
-        imagen: "../image/Remera2.png",
+        imagen: "../image/remera2.png",
         precio: 28000
     },
     {   
